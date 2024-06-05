@@ -1,9 +1,0 @@
----
-avatar: /img/team/ahmet-enis-cetin.jpg
-name: Ahmet Enis Cetin
-role: Co-Principal Investigator
-org: University of Illinois Chicago
-link: https://aeon.lab.uic.edu/faculty/
-excerpt: "Ahmet Enis Cetin received his B.Sc. degree in Electrical Engineering from METU, Ankara, Turkey, in 1984 and Ph.D. degree from the University of Pennsylvania in 1987. He was an Assistant Professor at University of Toronto between 1987-1989."
-bio: "Ahmet Enis Cetin received his B.Sc. degree in Electrical Engineering from METU, Ankara, Turkey, in 1984 and Ph.D. degree from the University of Pennsylvania in 1987. He was an Assistant Professor at University of Toronto between 1987-1989. He joined Bilkent University in 1989 and took an early retirement in 2017. He was a Visiting Professor at UC San Diego in 2016-2017. He joined University of Illinois Chicago in 2017 and he is now a professor of electrical and computer engineering. He is also a member of Discovery Partners Institute, Chicago, IL. Together with his Ph.D. student Erzin, he introduced the concept of adaptive prediction and split vector quantization for Line Spectral Frequency representations. This concept was used in ITU speech coding standards including G.729, G.723.1 and GSM EFR. He co-founded a successful startup wideangle OEM smart camera company in 2003: Oncam-Grandeye (ww.oncamgrandeye.com). His group at Bilkent University developed a surveillance camera-based wildfire detection system which is installed in more than 100 locations in Turkey, Cyprus, Singapore, South Korea and the US. He received a best paper award for this work in a meeting organized by UNESCO and Cyprus Presidency of the European Union. TIME Magazine recognized artificial intelligence (AI) based wildfire detection as one of the Best Inventions of 2023. He is the Editor-in-Chief, Signal, Image and Video Processing published by Springer-Nature. He is a Fellow of IEEE."
----
