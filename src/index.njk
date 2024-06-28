@@ -55,7 +55,7 @@ layout: base.njk
     </div>
 </section>
 
-<section class="py-20" id="events">
+<section class="py-20 events-section" id="upcomingEvents">
     <div class="container">
         <h2 class="text-center h3">Upcoming Events</h2>
         {# {% set sortedEvents = collections.events | sort(attribute='filePathStem') %} #}
@@ -82,6 +82,36 @@ layout: base.njk
         {% endif %}
     </div>
 </section>
+
+
+<section class="py-20 events-section" id="pastEvents">
+    <div class="container">
+        <h2 class="text-center h3">Past Events</h2>
+        {# {% set sortedEvents = collections.events | sort(attribute='filePathStem') %} #}
+        {% set sortedEvents = collections.events | sort(attribute='filePathStem') | pastEvents %}
+        
+        {% if sortedEvents | length > 3 %}
+        <div class="splide splide-events" aria-label="Pose events">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    {% for event in sortedEvents %}
+                        <li class="splide__slide">
+                            {% include "eventCard.njk" %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% else %}
+        <div class="fewer-events">
+            {% for event in sortedEvents %}
+               <div> {% include "eventCard.njk" %}</div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</section>
+
 
 <section id="training-material" class="py-20">
     <div class="container">
