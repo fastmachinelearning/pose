@@ -3,6 +3,25 @@
     "subtitle": "Utilizing the Power of hls4ml for Transformative Applications in Embedded Systems and Material Science.",
     "stories": [
         {
+            "title": "In-Situ High-Speed Computer Vision",
+            "subtitle": "Deploying neural networks for in-situ inference on frame grabber FPGAs in high-speed imaging <br><br><a href='https://urldefense.com/v3/__https://medium.com/@forelliryan/deploying-neural-networks-for-in-situ-inference-on-frame-grabber-fpgas-in-high-speed-imaging-6201557fdabc__;!!DZ3fjg!43HzUsfLVMgMqD8U-m5cVvkcSWu4jbiuJm2b9XbeVYluJ1gccWW0hfand0j1QAwhEQVFGBaLn2jczzqYchTrF-1JyfIsKUM$'><u>Medium article</u></a><br><a href='https://urldefense.com/v3/__https://arxiv.org/abs/2312.00128__;!!DZ3fjg!43HzUsfLVMgMqD8U-m5cVvkcSWu4jbiuJm2b9XbeVYluJ1gccWW0hfand0j1QAwhEQVFGBaLn2jczzqYchTrF-1JxH69UdY$'><u>Fusion Paper</u></a>",
+            "image": "/img/in-situ-computer-vision.png",
+            "content": [
+                {
+                    "title": "Background",
+                    "text": "Many scientific domains utilize high-speed imaging to aid in experimentation and discovery. From analyzing fusion magneto hydrodynamics, to crystal structure detection in transmission electron microscopy, there is a need for in-situ fast inference in these experiments which operate in the kHz to MHz range."
+                },
+                {
+                    "title": "Strategy",
+                    "text": "Typically, dedicated PCIe frame grabber devices are paired with high-speed cameras to handle such high throughput, and a protocol such as CoaXPress is used to transmit the raw camera data between the systems. Many frame grabbers implement this protocol as well as additional pixel preprocessing stages on an FPGA device, for which the manufacturer makes the reference design available. Moreover, open-source codesign workflows like hls4ml enable easy translation and deployment of neural networks to FPGA devices, and have demonstrated latencies on the order of nanoseconds to microseconds. We leverage these existing tools to construct a framework for quick neural network deployment to frame grabber FPGAs."
+                },
+                {
+                    "title": "Results",
+                    "text": "We construct a framework for easy deployment of hls4ml neural networks to the frame grabbers for use in real-time control, data reduction, manufacturing, or other applications. The framework comes complete with two comprehensive tutorials, C/RTL testbenches, and pre-written HDL to enable easy inference latency benchmarking. We have successfully applied this framework to the field of fusion magnetohydrodynamics with more applications in progress."
+                }
+            ]
+        },
+        {
             "title": "Wildfire Project",
             "subtitle": "Enabling Embedded Systems and IoT with hls4ml",
             "image": "/img/project-wildfire.png",
