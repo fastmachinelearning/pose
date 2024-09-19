@@ -115,4 +115,4 @@ In Eleventy (11ty), a collection is a set of content, typically markdown files, 
 
    - Similar to the team data, each event's data is stored in a Markdown file.
    - On the home page, only upcoming events are displayed in ascending order based on their filenames. For optimal performance, older events should be moved to the `/past-events/` folder periodically.
-   - If there are fewer than four events, the event cards will be displayed as static cards, not in a slider format.
+   - If there are fewer than four events, the event cards will be displayed as static cards, not in a slider format. 
