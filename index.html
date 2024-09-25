@@ -29,7 +29,13 @@
 			<nav>
 				<li><a href="#home">Home</a></li>
 				<li><a href="#team">Team</a></li>
-				<li><a href="#events">Events</a></li>
+				<li class="dropdown">
+					<a href="#events" class="dropbtn">Events</a>
+					<div class="dropdown-content">
+					<a href="#upcomingEvents">Upcoming</a>
+					<a href="#pastEvents">Past</a>
+					</div>
+				</li>
 				<li><a href="#training-material">Training Material</a></li>
 				<li><a href="#success-stories">Success Stories</a></li>
 			</nav>
@@ -193,7 +199,7 @@
     </div>
 </section>
 
-<section class="py-20" id="events">
+<section class="py-20 events-section" id="upcomingEvents">
     <div class="container">
         <h2 class="text-center h3">Upcoming Events</h2>
         
@@ -202,7 +208,89 @@
         
         <div class="fewer-events">
             
-               <div> <div class="card event-card">
+        </div>
+        
+    </div>
+</section>
+
+
+<section class="py-20 events-section" id="pastEvents">
+    <div class="container">
+        <h2 class="text-center h3">Past Events</h2>
+        
+        
+        
+        
+        <div class="splide splide-events" aria-label="Pose events">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    
+                        <li class="splide__slide">
+                            <div class="card event-card">
+
+    <div class="event-time">APRIL 22 - 24, 2024</div>
+
+    <div class="event-info">
+        <div>
+
+            <div class="location-address">
+                <img class="icon" src="/pose/img/icon-location.svg" width="16" height="16"/>
+                <div>
+                    <div class="location">Tempe, AZ</div>
+                    
+                </div>
+            </div>
+
+            <div class="event-details">Special Session at the IEEE VLSI Test Symposium 2024 on Ensuring Reliability and Security of AI through hls4ml</div>
+
+            
+            <div class="event-link">
+                <a href="https://tttc-vts.org/public_html/new/2024/" target="_blank">
+                    <img src="/pose/img/icon-external-link.svg" width="16"/>
+                    <span>Event Details</span>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+                        </li>
+                    
+                        <li class="splide__slide">
+                            <div class="card event-card">
+
+    <div class="event-time">JUNE, 2024</div>
+
+    <div class="event-info">
+        <div>
+
+            <div class="location-address">
+                <img class="icon" src="/pose/img/icon-location.svg" width="16" height="16"/>
+                <div>
+                    <div class="location">Tempe, AZ</div>
+                    
+                </div>
+            </div>
+
+            <div class="event-details">Special Session at the IEEE VLSI Test Symposium 2024 on Ensuring Reliability and Security of AI through hls4ml</div>
+
+            
+            <div class="event-link">
+                <a href="https://tttc-vts.org/public_html/new/2024/" target="_blank">
+                    <img src="/pose/img/icon-external-link.svg" width="16"/>
+                    <span>Event Details</span>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+                        </li>
+                    
+                        <li class="splide__slide">
+                            <div class="card event-card">
 
     <div class="event-time">JULY, 2024</div>
 
@@ -230,9 +318,11 @@
         </div>
     </div>
 
-</div></div>
-            
-               <div> <div class="card event-card">
+</div>
+                        </li>
+                    
+                        <li class="splide__slide">
+                            <div class="card event-card">
 
     <div class="event-time">August 2024</div>
 
@@ -252,17 +342,26 @@
             <div class="event-details">hls4ml Summer School - Details will be released soon!</div>
 
             
-            <div class="event-no-link">Details Coming Soon</div>
+            <div class="event-link">
+                <a href="https://sites.google.com/view/hls4mlsummerschool" target="_blank">
+                    <img src="/pose/img/icon-external-link.svg" width="16"/>
+                    <span>Event Details</span>
+                </a>
+            </div>
             
         </div>
     </div>
 
-</div></div>
-            
+</div>
+                        </li>
+                    
+                </ul>
+            </div>
         </div>
         
     </div>
 </section>
+
 
 <section id="training-material" class="py-20">
     <div class="container">
@@ -299,6 +398,32 @@
         <h3 class="h4 font-light">Utilizing the Power of hls4ml for Transformative Applications in Embedded Systems and Material Science.</h3>
     </div>
     <div class="container">
+        
+            <hr>
+            <div class="story">
+                <div>
+                    <h3 class="display text-gradient leading-snug"><span>In-Situ High-Speed Computer Vision</span></h3>
+                    <h4 class="font-normal">Deploying neural networks for in-situ inference on frame grabber FPGAs in high-speed imaging <br><br><a href='https://urldefense.com/v3/__https://medium.com/@forelliryan/deploying-neural-networks-for-in-situ-inference-on-frame-grabber-fpgas-in-high-speed-imaging-6201557fdabc__;!!DZ3fjg!43HzUsfLVMgMqD8U-m5cVvkcSWu4jbiuJm2b9XbeVYluJ1gccWW0hfand0j1QAwhEQVFGBaLn2jczzqYchTrF-1JyfIsKUM$'><u>Medium article</u></a><br><a href='https://urldefense.com/v3/__https://arxiv.org/abs/2312.00128__;!!DZ3fjg!43HzUsfLVMgMqD8U-m5cVvkcSWu4jbiuJm2b9XbeVYluJ1gccWW0hfand0j1QAwhEQVFGBaLn2jczzqYchTrF-1JxH69UdY$'><u>Fusion Paper</u></a></h4>
+                    
+                    <img class="mb-6" src="/pose/img/in-situ-computer-vision.png" alt="In-Situ High-Speed Computer Vision" width="100%" height="auto"/>
+                    
+                </div>
+                <div>
+                    
+                    <div class="pill"></div>
+                    <h5>Background</h5>
+                    <p>Many scientific domains utilize high-speed imaging to aid in experimentation and discovery. From analyzing fusion magneto hydrodynamics, to crystal structure detection in transmission electron microscopy, there is a need for in-situ fast inference in these experiments which operate in the kHz to MHz range.</p>
+                    
+                    <div class="pill"></div>
+                    <h5>Strategy</h5>
+                    <p>Typically, dedicated PCIe frame grabber devices are paired with high-speed cameras to handle such high throughput, and a protocol such as CoaXPress is used to transmit the raw camera data between the systems. Many frame grabbers implement this protocol as well as additional pixel preprocessing stages on an FPGA device, for which the manufacturer makes the reference design available. Moreover, open-source codesign workflows like hls4ml enable easy translation and deployment of neural networks to FPGA devices, and have demonstrated latencies on the order of nanoseconds to microseconds. We leverage these existing tools to construct a framework for quick neural network deployment to frame grabber FPGAs.</p>
+                    
+                    <div class="pill"></div>
+                    <h5>Results</h5>
+                    <p>We construct a framework for easy deployment of hls4ml neural networks to the frame grabbers for use in real-time control, data reduction, manufacturing, or other applications. The framework comes complete with two comprehensive tutorials, C/RTL testbenches, and pre-written HDL to enable easy inference latency benchmarking. We have successfully applied this framework to the field of fusion magnetohydrodynamics with more applications in progress.</p>
+                    
+                </div>
+            </div>
         
             <hr>
             <div class="story">
