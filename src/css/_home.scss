@@ -173,9 +173,34 @@
 }
 
 #training-material{
-    height:500px;
+    height:700px;
     background-color: $dark;
     color: white;
+
+    h5 {
+        font-size: 1.15rem; /* Slightly larger font size */
+        font-weight: bold; /* Makes the title bold */
+        margin-bottom: 0.5rem; /* Less space between title and brief */
+    }
+    p {
+        margin-bottom: 0.5rem; /* Reduces space between brief and link */
+    }
+    a {
+        display: inline-block;
+        font-weight: 600; /* Makes the link bold, if desired */
+        color: #3498db; /* Custom link color */
+        text-decoration: none; /* Removes underline */
+        margin-bottom: 1rem; /* Adjust space if needed */
+    }
+    a:hover {
+        text-decoration: underline; /* Underline on hover */
+    }
+    
+    .list-unstyled {
+        list-style-type: none; /* Removes bullet points */
+        padding-left: 0; /* Removes any default padding */
+        margin-left: 0; /* Removes any default margin */
+    }
 }
 
 #success-stories{
@@ -204,5 +229,14 @@
                 }
             }
         }
+    }
+    .text-muted {
+        color: #6c757d; /* Muted grey color */
+        font-size: 0.875rem; /* Smaller font size */
+        text-align: right;
+        display: block;
+    }
+    img {
+        margin-bottom: 0.2rem; /* Reduce space below the image */
     }
 }

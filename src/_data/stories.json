@@ -4,8 +4,9 @@
     "stories": [
         {
             "title": "In-Situ High-Speed Computer Vision",
-            "subtitle": "Deploying neural networks for in-situ inference on frame grabber FPGAs in high-speed imaging <br><br><a href='https://urldefense.com/v3/__https://medium.com/@forelliryan/deploying-neural-networks-for-in-situ-inference-on-frame-grabber-fpgas-in-high-speed-imaging-6201557fdabc__;!!DZ3fjg!43HzUsfLVMgMqD8U-m5cVvkcSWu4jbiuJm2b9XbeVYluJ1gccWW0hfand0j1QAwhEQVFGBaLn2jczzqYchTrF-1JyfIsKUM$'><u>Medium article</u></a><br><a href='https://urldefense.com/v3/__https://arxiv.org/abs/2312.00128__;!!DZ3fjg!43HzUsfLVMgMqD8U-m5cVvkcSWu4jbiuJm2b9XbeVYluJ1gccWW0hfand0j1QAwhEQVFGBaLn2jczzqYchTrF-1JxH69UdY$'><u>Fusion Paper</u></a>",
+            "subtitle": "Deploying neural networks for in-situ inference on frame grabber FPGAs in high-speed imaging <br><br><a href='https://medium.com/@forelliryan/deploying-neural-networks-for-in-situ-inference-on-frame-grabber-fpgas-in-high-speed-imaging-6201557fdabc'><u>Medium article</u></a><br><a href='https://arxiv.org/abs/2312.00128'><u>Fusion Paper</u></a>",
             "image": "/img/in-situ-computer-vision.png",
+            "imageAttribution": "Daisuke Shiraki",
             "content": [
                 {
                     "title": "Background",
@@ -43,7 +44,8 @@
         {
             "title": "High Speed Camera+4D TEM",
             "subtitle": "Enabling Material Science with hls4ml",
-            "image": "",
+            "image": "/img/4d_tem_jca.png",
+            "imageAttribution": "Joshua Agar",
             "content": [
                 {
                     "title": "Background",
