@@ -113,19 +113,49 @@ layout: base.njk
 </section>
 
 
-<section id="training-material" class="py-20">
+<section id="training-material" class="py-20 grey-box">
     <div class="container">
-        <h2 class="h3">Training Material</h2>
-         <div class="content-blocks">
+        <h2 class="h3 text-center mb-12">Training Material</h2>
+
+        <div class="content-blocks">
             {% for block in training.material %}
-            <div class="content-block">
+            <div class="content-block mb-8">
+                <!-- Section Title (e.g., Tutorial, Example Designs) -->
                 <div class="pill"></div>
-                <h3 class="h5">{{ block.title }}</h3>
+                <h3 class="h4 mb-4">{{ block.title }}</h3>
+
+                {% if block.elements and block.elements.length > 0 %}
+                <ul class="list-unstyled">
+                    {% for element in block.elements %}
+                    <li class="mb-4">
+                        <!-- Inner Title (Description in your JSON) -->
+                        {% if element.description %}
+                        <h5>{{ element.description }}</h5>
+                        {% endif %}
+                        
+                        <!-- Brief Description -->
+                        {% if element.briefDescription %}
+                        <p>{{ element.briefDescription }}</p>
+                        {% endif %}
+                        
+                        <!-- Link -->
+                        {% if element.link %}
+                        <a class="btn-text" href="{{ element.link }}" target="_blank">Read more</a>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <p class="text-muted">No additional materials available for {{ block.title }}.</p>
+                {% endif %}
             </div>
             {% endfor %}
         </div>
     </div>
 </section>
+
+
+
 
 <section id="success-stories" class="py-20">
     <div class="container-md text-center">
@@ -141,6 +171,10 @@ layout: base.njk
                     <h4 class="font-normal">{{ story.subtitle | safe }}</h4>
                     {% if story.image %}
                     <img class="mb-6" src="{{story.image | url}}" alt="{{ story.title }}" width="100%" height="auto"/>
+                    <!-- Image Attribution -->
+                    {% if story.imageAttribution %}
+                    <p class="text-muted small">Image by: {{ story.imageAttribution }}</p>
+                    {% endif %}
                     {% endif %}
                 </div>
                 <div>

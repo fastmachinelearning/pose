@@ -1,16 +1,32 @@
 {
     "material": [
         {
-            "title": "Tutorial"
+            "title": "Tutorials",
+            "elements": [
+                {
+                    "description": "Deploying neural networks for in-situ inference on frame grabber FPGAs in high-speed imaging",
+                    "briefDescription": "Guides the user through compilation, deployment, and benchmarking of quantized hls4ml neural network on high speed frame grabber device.",
+                    "link": "https://github.com/fastmachinelearning/hls4ml-frame-grabbers"
+                }
+            ]
         },
         {
-            "title": "Example Designs"
+            "title": "Example Designs",
+            "elements": [
+                
+            ]
         },
         {
-            "title": "Training Data"
+            "title": "Training Data",
+            "elements": [
+                
+            ]
         },
         {
-            "title": "Course Materials"
+            "title": "Course Materials",
+            "elements": [
+                
+            ]
         }
     ]
 }
