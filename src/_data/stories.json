@@ -3,6 +3,26 @@
     "subtitle": "Utilizing the Power of hls4ml for Transformative Applications in Embedded Systems and Material Science.",
     "stories": [
         {
+            "title": "Instantaneous Phase Estimation in Neuroscience",
+            "subtitle": "Real-Time Brain-Computer Interface Using hls4ml in SpikeGadgets",
+            "image": "/img/istantaneous-phase-estimation.png",
+            "imageAttribution": "",
+            "content": [
+                {
+                    "title": "Background",
+                    "text": "Electroencephalography (EEG) and Local Field Potential (LFP) recordings capture brain activity through oscillating wave patterns at various frequencies. Estimating the phase of these signals is crucial for understanding how the brain functions and is essential for technologies like brain-computer interfaces (BCIs) and neurofeedback systems."
+                },
+                {
+                    "title": "Strategy",
+                    "text": "We introduce DCTNN, a machine learning model that splits signals into real and imaginary parts to improve real-time phase estimation. We also explore how combining machine learning with frequency methods like Fast Fourier Transform (FFT) enhances phase extraction from EEG and LFP signals. Using hls4ml, we convert these models into formats that run efficiently on FPGAs. This integration allows the models to process neurological data directly on the data acquisition platform, enabling fast and accurate phase estimation."
+                },
+                {
+                    "title": "Results",
+                    "text": "The Phase Estimation model developed in this project significantly outperforms traditional Fast Fourier Transform (FFT) and ecHT models. We successfully integrated a simple machine learning model into the SpikeGadgets platform. This research demonstrates that our method allows for more accurate real-time analysis of brain activity and behavior by extracting phase information from rodent brain signals."
+                }
+            ]
+        },
+        {
             "title": "In-Situ High-Speed Computer Vision",
             "subtitle": "Deploying neural networks for in-situ inference on frame grabber FPGAs in high-speed imaging <br><br><a href='https://medium.com/@forelliryan/deploying-neural-networks-for-in-situ-inference-on-frame-grabber-fpgas-in-high-speed-imaging-6201557fdabc'><u>Medium article</u></a><br><a href='https://arxiv.org/abs/2312.00128'><u>Fusion Paper</u></a>",
             "image": "/img/in-situ-computer-vision.png",
