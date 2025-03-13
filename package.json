@@ -4,10 +4,11 @@
   "description": "Featuring absolutely nothing beyond a base HTML5 template and the essential setup to watch and compile your Sass alongside 11ty.",
   "main": "index.html",
   "scripts": {
-    "start": "npm run copy:img && eleventy --serve",
+    "start": "npm run copy:img && npm run copy:docs && eleventy --serve",
     "build:js": "esbuild src/js/index.js --bundle --outdir=public/js",
     "copy:img": "cp -r src/img public/",
-    "build": "eleventy && npm run build:js && npm run copy:img"
+    "copy:docs": "cp -r src/docs public/",
+    "build": "eleventy && npm run build:js && npm run copy:img && npm run copy:docs"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,6 @@
     "not dead"
   ],
   "devDependencies": {
-    "esbuild": "^0.20.1"
+    "esbuild": "^0.25.1"
   }
 }
