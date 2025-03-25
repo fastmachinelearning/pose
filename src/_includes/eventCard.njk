@@ -15,7 +15,7 @@
                 </div>
             </div>
 
-            <div class="event-details">{{event.data.details}}</div>
+            <div class="event-details">{{event.data.details | safe}}</div>
 
             {% if event.data.link %}
             <div class="event-link">
